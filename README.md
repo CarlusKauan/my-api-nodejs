@@ -1,4 +1,9 @@
 # my-api-node.js 🌱
+<p>antes de rodar: </p>
+<code>npm install</code>
+<br>
+<code>npm run dev</code>
+
 ## ~ Criando Api em node.js
 <p>Criando uma api em node.js, por enquanto sem banco !</p>
 
