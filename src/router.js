@@ -52,7 +52,7 @@ routes.get('/:id', async (req, res) => {
         try {
             // filtrar um = findOne()
             const pet = await Pet.findOne({id: id})
-
+            // validação
             if(!pet){
                 res.status(422).json({message: 'Pet não encontrado !'})
                 return;
@@ -63,8 +63,6 @@ routes.get('/:id', async (req, res) => {
         } catch (error) {
             res.status(500).json({ error: error })
         }
-
-        return res.status(200).json(buscarPets);
         
     } catch (error) {
         res.status(404).json({message: 'não foi encontrado !'})

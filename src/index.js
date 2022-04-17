@@ -15,7 +15,7 @@ app.use('/pets',routes)
 
 const DB_USER = process.env.DB_USER
 const DB_PASSWORD = encodeURIComponent(process.env.DB_PASSWORD)
-
+// Conexão com MongoDb
 mongoose
     .connect(   
         `mongodb+srv://${DB_USER}:${DB_PASSWORD}@cluster0.patyw.mongodb.net/myapinodejs?retryWrites=true&w=majority`
