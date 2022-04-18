@@ -19,9 +19,11 @@
     </li>
 </ul>
 <br>
+<p>
 <a href="https://www.youtube.com/watch?v=K5QaTfE5ylk">
     Crie uma API RESTful com Node.js e MongoDB | CRUD com Node, Express e Mongoose
 </a>
+</p>
 <ul>
     <li>Autoria: 
         <a href="https://github.com/matheusbattistil">Matheus Battisti</a>
