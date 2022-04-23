@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors')
 const routes = require('./router');
 const mongoose = require('mongoose');
 
@@ -8,6 +9,7 @@ require('dotenv').config()
 // criando a app
 const app = express();
 
+app.use(cors())
 app.use(express.json())
 
 // use rotas
@@ -22,6 +24,6 @@ mongoose
     )
     .then(() => {
         // rodando na porta 3000
-        app.listen(3000, () => console.log("🚀"));
+        app.listen(3000, () => console.log("running.."));
     })
     .catch((err) => console.log(err))
